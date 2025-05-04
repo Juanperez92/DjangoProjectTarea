@@ -1,0 +1,16 @@
+{% extends 'base/principal.html' %}
+
+{% block content %}
+     <div class = "barra-superior">
+    <a href="{% url 'tareas' %}">&#x1F860; Volver</a>
+    </div>
+
+    <div class="cuerpo-tarjeta">
+
+    <h1>Tarea: {{ tarea }} </h1>
+
+    <p>Descripcion: {{ tarea.descripcion }}<p>
+
+    </div>
+
+{% endblock content %}
